@@ -30,6 +30,7 @@ def main():
     try:
         output = open('./output.csv', 'x')
         output.write(','.join(data))
+        output.write('\n')
         output.close()
     except:
         sys.exit('Something went wrong writing the output file.')
