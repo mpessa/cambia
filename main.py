@@ -29,7 +29,7 @@ def main():
     # Open and write the output file. Exit with error message if an error occurs
     try:
         output = open('./output.csv', 'x')
-        output.write(data.join(','))
+        output.write(','.join(data))
         output.close()
     except:
         sys.exit('Something went wrong writing the output file.')
