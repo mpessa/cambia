@@ -7,3 +7,6 @@ COPY . /app
 
 # Run the sort
 CMD ["python3", "main.py"]
+
+# To retreive the output file run:
+# docker cp <container ID>:/app/output.csv ./output.csv
