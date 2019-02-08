@@ -7,7 +7,7 @@ def main():
     try:
         f = open(input_file, 'r')
     except:
-        print('The input file does not exist.')
+        sys.exit('The input file does not exist.')
 
 if __name__ == "__main__":
     main()
