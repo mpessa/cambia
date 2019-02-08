@@ -26,6 +26,7 @@ def main():
     # example was ascending order
     data.sort()
 
+    # Open and write the output file. Exit with error message if an error occurs
     try:
         output = open('./output.csv', 'x')
         output.write(data.join(','))
