@@ -29,10 +29,9 @@ def main():
 
     # Open and write the output file. Exit with error message if an error occurs
     try:
-        output = open('./output.csv', 'x')
-        output.write(','.join(data))
-        output.write('\n')
-        output.close()
+        with open('./output.csv', 'x') as ouput:
+            output.write(','.join(data))
+            output.write('\n')
     except:
         sys.exit('Something went wrong writing the output file.')
 
