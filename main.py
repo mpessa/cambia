@@ -12,6 +12,7 @@ def main():
         sys.exit('The input file does not exist.')
 
     # Remove the output file if it already exists
+    # This isn't really needed in this instance because of running in the docker container
     if os.path.exists('./output.csv'):
         os.remove('./output.csv')
     
