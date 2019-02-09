@@ -19,9 +19,7 @@ def main():
         os.remove('./output.csv')
 
     # Sort the strings into descending alphabetical order
-    # because that's what the directions said even if the
-    # example was ascending order
-    data.sort()
+    data.sort(reverse=True)
 
     # Open and write the output file. Exit with error message if an error occurs
     try:
