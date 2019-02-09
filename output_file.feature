@@ -9,3 +9,6 @@ Feature: Create the output file
     Given the user does not have permission to create files
     When I create the output file
     Then I see "Something went wrong writing the output file."
+
+# These tests would be very beneficial because they are checking the user
+# permissions.
